@@ -19,3 +19,4 @@ resource "aws_cloudwatch_event_target" "disable_target" {
   arn       = aws_lambda_function.manage_alarms.arn
   input     = jsonencode({"action": "disable"})
 }
+
